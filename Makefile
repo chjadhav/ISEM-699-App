@@ -52,8 +52,6 @@ $(APPNAME):
 	@if [ -d $(SOURCEREL)/$(APPNAME) ]; \
 	then \
 		 cp -R $(SOURCEREL)/$(APPNAME) $(ZIPREL)/$(APPNAME)/; \
-		 find $(ZIPREL)/$(APPNAME)/CED-Roku-Lib/ -name \*.xml -exec mv {} $(ZIPREL)/$(APPNAME)/components/ ";"; \
-		 find $(ZIPREL)/$(APPNAME)/CED-Roku-Lib/ -name \*.brs -exec mv {} $(ZIPREL)/$(APPNAME)/source/ ";"; \
 		 (cd $(ZIPREL)/$(APPNAME); zip -9 -r --exclude=*.md* "$(ZIPREL)/$(APPNAME).zip" . -x ./.svn\* \*/.svn\* ./docs\* ./.git\* \*/.git\*); \
 		 rm -rf $(ZIPREL)/$(APPNAME); \
 	else \
