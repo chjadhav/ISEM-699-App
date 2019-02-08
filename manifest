@@ -1,0 +1,13 @@
+title=ViYou
+mm_icon_focus_hd=pkg:/images/icon_focus_hd.png
+mm_icon_focus_sd=pkg:/images/icon_focus_sd.png
+splash_screen_fhd=pkg:/images/splash_bg.png
+splash_screen_hd=pkg:/images/splash_bg.png
+splash_screen_sd=pkg:/images/splash_bg.png
+bs_libs_required=roku_ads_lib
+splash_color=#000000
+splash_rsg_optimization=1
+ui_resolutions=fhd
+major_version=1
+minor_version=0
+build_version=0
